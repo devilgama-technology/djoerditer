@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jurditer 2024</title>
+    <link rel="icon" type="image/png" href="img/Logo.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/aa65d0bc7e.js" crossorigin="anonymous"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="./css/style.css"/>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<style>
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid var(--primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    height: var(--nav-height);
+    width: 100%;
+    transform: translateY();
+  }
+
+  .nav--hidden {
+    transform: translateY(-75px);
+    box-shadow: none;
+    transition: 0.6s;
+  }
+/* 
+  .nav--reshow {
+    transform: translateY(0);
+    box-shadow: none;
+    transition: 0.6s;
+  } */
+
+</style>
+  </head>
+  <body>
+    <!-- Scroll Progress -->
+    <div class="header">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    </div>
+
+    <!-- Navbar start
+    <nav class="navbar">
+      <a href="#about" class="navbar-logo">Jur<span>di</span><span>ter</span></a>
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#tujuan">Video</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+     Navbar end-->
+
+    <!-- Hero Section start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h3>It's a</h3><h1><span>WRAP! #1</span></h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet?
+        </p>
+        <a href="" class="cta">Jelajahi</a>
+      </main>
+    </section>
+    <!-- Hero Section end -->
+
+    <!-- About Section start
+    <section id="about" class="about">
+  <div data-aos="fade-right"
+  data-aos-duration="1000">      
+  <h2><span>Tentang</span> Kami</h2>
+  </div>
+  <div data-aos="zoom-in"
+       data-aos-duration="1000">
+      <div class="row">
+        <div class="about-img">
+          <img src="img/Ai Hoshikawa2.png" alt="Tentang Kami">
+        </div>
+        <div class="content">
+          <h3 style="color: var(--tengah);">Tentang DevilGama Technology</h3>
+          <p>DGT (DevilGama Technology) adalah sebuah organisasi siswa yang berdiri di bawah naungan SMA Negeri 4 Magelang</p>
+          <p>DevilGama Technology memiliki semangat untuk membantu seluruh warga SMA Negeri 4 Magelang dalam menghadapi masalah teknologi yang ada</p>
+          <p>Kami percaya bahwa teknologi memiliki potensi untuk membuat dunia menjadi tempat yang lebih baik, dan DGT berdedikasi untuk menggunakan keahlian anggota DGT untuk mewujudkannya</p>
+        </div>
+      </div>
+  </div>
+    </section>
+About Section end -->
+
+  <!-- Products Section start 
+  <section class="tujuan" id="tujuan">
+   <div data-aos="fade-right"
+        data-aos-duration="1000">
+    <h2><span>Tujuan dan Program</span> Kami</h2>
+    <p>Beberapa tujuan dan program kerja DGTech</p>
+   </div>
+
+  <div data-aos="zoom-in"
+       data-aos-duration="1000">
+    <div class="row">
+      <div class="product-card">
+        <div class="product-icons">
+        </div>
+        <div class="product-image">
+            <iframe src="../Honkai_ Star Rail 2024-09-16 13-28-15.mp4" frameborder="0" autoplay="false"></iframe>
+        </div>
+        <div class="product-content">
+          <h3>Judul 1</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, sint.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+Products Section end -->
+
+  <!-- Footer start
+  <footer>
+    <div class="socials">
+      <a href="https://www.instagram.com/dgtech_smapa/"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+      <a href="https://www.tiktok.com/@devil_gama_technology?_t=8nzPfQkP4cb&_r=1"><i class="fa-brands fa-tiktok fa-2xl"></i></a>
+      <a href="https://www.youtube.com/@DevilgamaTechnology"><i class="fa-brands fa-youtube fa-2xl"></i></a>
+      <a href="https://wa.me/83862145455"><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
+    </div>
+
+    <div class="links">
+      <a href="#home">Home</a>
+      <a href="#about">Tentang Kami</a>
+      <a href="#tujuan">Video</a>
+    </div>
+
+    <div class="credit">
+      <p>Created by <a href="#home">DGT</a> | &copy; 2024.</p>
+    </div>
+  </footer>
+Footer end -->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My Java Script -->
+    <script src="./js/script.js"></script>
+
+    <script>
+      {
+  const nav = document.querySelector(".navbar");
+  let lastScrollY = window.scrollY;
+
+  window.addEventListener("scroll", () => {
+      if (lastScrollY < window.scrollY) {
+          nav.classList.add ("nav--hidden");
+      } else {
+          nav.classList.remove ("nav--hidden");
+      }
+
+      lastScrollY = window.scrollY;
+  })
+}
+  </script>
+
+<!-- <script>
+  {
+const nav = document.querySelector(".navbar");
+let lastScrollY = window.scrollY;
+
+window.addEventListener("scroll", () => {
+});
+
+// keep track of previous scroll position
+let prevScrollPos = window.pageYOffset;
+
+window.addEventListener('scroll', function() {
+  // current scroll position
+  const currentScrollPos = window.pageYOffset;
+
+  if (prevScrollPos > currentScrollPos) {
+    // user has scrolled up
+    document.querySelector('.nav--hidden').classList.add('.nav--reshow');
+  } else {
+    // user has scrolled down
+    document.querySelector('.nav--hidden').classList.remove('nav-reshow');
+  }
+
+  // update previous scroll position
+  prevScrollPos = currentScrollPos;
+});
+}
+</script> -->
+
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
