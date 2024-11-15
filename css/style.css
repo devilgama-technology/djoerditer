@@ -1,5 +1,5 @@
 :root {
-    --primary: #ffde72f3;
+    --primary: #dbaf1ef3;
     --bg: #010101;
     --other: #20015a;
     --kiri: #3f008f;
@@ -171,6 +171,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    cursor: context-menu;
     position: relative;
     /* border-bottom-left-radius: 80px;
     border-bottom-right-radius: 80px; */
@@ -202,8 +203,8 @@
   } */
   
   .hero .content h1 span {
-    color: rgb(255, 1, 1);
-    font-size: larger;
+    color: var(--primary);
+    font-size: 200%;
   }
   
   .hero .content p {
@@ -215,7 +216,7 @@
   }
   
   .hero .content .cta {
-  margin-top: 1rem;
+  margin-top: 3rem;
   display: inline-block;
   padding: 1rem 3rem;
   font-size: 2rem;
@@ -556,7 +557,7 @@
   /* Laptop */
   @media (max-width: 1366px) {
     html {
-      font-size: 75%;
+      font-size: 60%;
     }
   }
   /* Tablet */
@@ -633,13 +634,18 @@
   .daftar .row form {
     padding-top: 0;
   }
+  .hero .content h1 span {
+      font-size: 150%;
+  }
   }
   
   /* Mobile Phone */
-  @media (max-width: 450px) {
+  @media (max-width: 400px) {
     html {
       font-size: 55%;
     }
+
+
 
     .tujuan .row {
       gap: 10rem;
